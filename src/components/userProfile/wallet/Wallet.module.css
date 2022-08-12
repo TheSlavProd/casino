@@ -1,0 +1,52 @@
+.wallet {
+  margin: 24px 24px 12px 24px;
+  padding: 24px 20px 24px 18px;
+  background: var(--wallet-background);
+  border-radius: 10px;
+}
+
+.tabs {
+  padding: 2px;
+  width: 100%;
+  background: var(--wallet-tabs-background);
+  box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  height: 37px;
+  cursor: pointer;
+  padding: 0 24px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+
+.activeTab {
+  color: #000000;
+  background: linear-gradient(0deg, #FFE925 -3.54%, #FEFF2A 113.51%);
+}
+
+@media screen and (max-width: 769px) {
+  .wallet {
+    margin: 8px 8px;
+    padding: 18px 12px;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

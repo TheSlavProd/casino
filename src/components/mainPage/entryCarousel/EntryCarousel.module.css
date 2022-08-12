@@ -1,0 +1,342 @@
+.entryCarousel {
+  margin: 24px 24px 18px 32px;
+}
+
+.slideButton {
+  z-index: 10;
+  position: absolute;
+  top: 43%;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28px;
+  width: 28px;
+  background: linear-gradient(180deg, rgba(159, 159, 187, 0.5) -31.93%, rgba(107, 107, 137, 0.5) 119.75%);
+  backdrop-filter: blur(5px);
+  border-radius: 7px;
+}
+
+.prevButton {
+  left: 5px;
+}
+
+.prevButton img {
+  transform: rotate(180deg);
+}
+
+.nextButton {
+  right: 5px;
+}
+
+.depositSlideContainer {
+  width: calc(100vw - 368px) !important;
+  background: var(--entry-carousel-background);
+  padding: 49px 52px 43px 52px;
+  position: relative;
+}
+
+.depositSlideContainer h3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-bottom: 38px;
+}
+
+.depositSlideContainer button {
+  margin-top: 26px;
+  cursor: pointer;
+  width: 232px;
+  height: 53px;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: var(--entry-carousel-button-background);
+  border-radius: 10.1629px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.button {
+  position: relative;
+  cursor: pointer;
+}
+
+.shadow {
+  position: absolute;
+  width: 188px;
+  height: 47px;
+  left: 31px;
+  top: 43px;
+  background: var(--entry-carousel-button-background);
+  opacity: 0.4;
+  filter: blur(16.5341px);
+  border-radius: 9.14155px;
+}
+
+.rocketImage {
+  position: absolute;
+  top: -35px;
+  right: 115px;
+}
+
+.rocketMobileImage {
+  display: none !important;
+}
+
+.amountAndCurrency {
+  display: flex;
+  align-items: center;
+}
+
+.amountAndCurrency input {
+  width: calc(314px - 36px);
+  height: calc(56px - 32px);
+  border: none;
+  outline: none;
+  padding: 16px 16px 16px 20px;
+  background: var(--entry-carousel-inputs-background);
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-right: 12px;
+}
+
+.currencySelect {
+  width: 123px;
+  height: 56px;
+}
+
+.currencySelectWrapper {
+  border-radius: 8px;
+  background: var(--entry-carousel-inputs-background);
+}
+
+.currencySelectedOption p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.currencySelectOptions {
+  top: 25px;
+  border-radius: 8px;
+  background: var(--entry-carousel-inputs-background);
+  width: calc(123px - 36px);
+}
+
+.currencySelectOption {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+}
+
+.jackpotContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.jackpotAmountAndLogo {
+  position: relative;
+}
+
+.jackpotAmountAndLogo img {
+  position: absolute;
+  top: -115px;
+  left: 220px;
+  width: 411px;
+}
+
+.jackpotAmount, .jackpotAmountMobile {
+  height: 135px;
+  padding: 0 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--entry-carousel-jackpot-amount-background-image);
+  background-color: var(--entry-carousel-jackpot-amount-background-color);
+  border-radius: 20px;
+  box-shadow: var(--entry-carousel-jackpot-amount-box-shadow);
+}
+
+.jackpotAmountMobile {
+  height: 62px;
+  width: fit-content;
+  padding: 0 16px;
+}
+
+.jackpotAmount p, .jackpotAmountMobile p {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 105.315px;
+  line-height: 158px;
+  color: #FFFFFF;
+}
+
+.jackpotAmountMobile p {
+  font-size: 48px;
+  line-height: 72px;
+}
+
+.jackpotAmountMobile, .jackpotLogoMobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .jackpotAmountAndLogo img {
+    top: -153px;
+    left: 5px;
+  }
+
+  .jackpotAmount {
+    height: 95px;
+  }
+
+  .jackpotAmount p {
+    font-size: 62.315px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .rocketImage {
+    right: 25px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .depositSlideContainer {
+    width: calc(100vw - 173px) !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .jackpotAmount {
+    height: 90px;
+  }
+
+  .jackpotAmount p {
+    font-size: 60px;
+    line-height: 72px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .rocketImage, .jackpotAmountAndLogo {
+    display: none !important;
+  }
+
+  .jackpotAmountMobile {
+    display: flex !important;
+  }
+
+  .rocketMobileImage, .jackpotLogoMobile {
+    display: block !important;
+  }
+
+  .slideTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .jackpotContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .jackpotContainer h3 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .jackpotAmount {
+    height: 62px;
+  }
+
+  .jackpotAmount p {
+    font-size: 48px;
+  }
+
+  .jackpotWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .jackpotWrapper .button button {
+    margin-top: 18px;
+    width: 276px;
+  }
+
+  .jackpotLogoMobile {
+    width: 260px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .entryCarousel {
+    margin: 15px 8px 15px 8px;
+  }
+
+  .depositSlideContainer {
+    width: calc(100vw - 63px) !important;
+    padding: 8px 16px;
+  }
+
+  .slideTitle {
+    margin-bottom: 12px;
+  }
+
+  .jackpotLogoMobile {
+    width: 303px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .depositSlideContainer button {
+    width: 100%;
+  }
+
+  .amountAndCurrency input {
+    width: calc(100% - 119.45px);
+  }
+
+  .depositSlideContainer h3 {
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 0;
+  }
+
+  .currencySelectOptions {
+    width: calc(100% - 36px);
+  }
+
+  .jackpotContainer h3 {
+    margin-bottom: 16px;
+  }
+}

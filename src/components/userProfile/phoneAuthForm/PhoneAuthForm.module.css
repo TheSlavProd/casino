@@ -1,0 +1,13 @@
+@media screen and (orientation: landscape) and (max-width: 950px) {
+  .promocodeAndTerms {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 22px;
+  }
+
+  .checkbox {
+    padding-bottom: 20px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,7 @@
+.divider {
+  margin: 0 auto;
+  height: 1px;
+  width: 170px;
+  background: var(--side-menu-divider);
+  transition: .2s ease width;
+}

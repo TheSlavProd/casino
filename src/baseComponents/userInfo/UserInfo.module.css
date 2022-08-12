@@ -1,0 +1,147 @@
+.wallet {
+  align-self: center;
+  justify-self: end;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+.amount {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.avatarContainer {
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--header-avatar-background);
+  border-radius: 10px;
+  margin-right: 12px;
+}
+
+.avatar {
+  object-fit: contain;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+}
+
+.currencyLogo {
+  height: 13px;
+  width: 13px;
+  margin-right: 6px;
+}
+
+.currencyName {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.currencyAndAmount {
+  margin-right: 12px;
+}
+
+.depositButton {
+  width: 120px;
+  height: 32px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: var(--header-deposit-button-background);
+  border-radius: 10px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
+  color: var(--header-deposit-button-color);
+}
+
+.authenticationButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.loginButton {
+  height: 43px;
+  width: 162px;
+  cursor: pointer;
+  padding: 0;
+  border: 1px solid #64627C;
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-right: 12px;
+}
+
+.signUpButton {
+  height: 43px;
+  width: 162px;
+  cursor: pointer;
+  padding: 0;
+  background: linear-gradient(66.47deg, #00C036 1.36%, #01EF8B 92.25%);
+  border-radius: 10px;
+  border: none;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 11px;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.currenciesButton {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 769px) {
+  .currencyAndAmount {
+    margin-right: 6px;
+  }
+  .depositButton {
+    width: 68px;
+  }
+
+  .depositButton span {
+    display: none;
+  }
+
+  .signUpButton, .loginButton {
+    width: 90px;
+  }
+}

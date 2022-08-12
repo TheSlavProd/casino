@@ -1,0 +1,55 @@
+.currenciesDropdown {
+  z-index: 15;
+  display: none;
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  background-color: var(--header-currencies-background);
+  width: calc(294.5px - 20px);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 16px 10px 20px 10px;
+}
+
+.dropdownOpened {
+  display: block;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  margin-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.currency p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.expandButton {
+  margin: 0 auto;
+  display: block;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(195.57deg, #84FD00 40.59%, #0F9B3B 159.91%);
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .currenciesDropdown {
+    top: 120px;
+  }
+}

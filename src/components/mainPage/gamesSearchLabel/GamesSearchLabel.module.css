@@ -1,0 +1,28 @@
+.gamesSearchLabel {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background-color: var(--games-search-label-background);
+  margin-right: 16px;
+}
+
+.gamesSearchLabel:last-of-type {
+  margin-right: 0;
+}
+
+.gamesSearchLabel img {
+  margin-right: 8px;
+}
+
+.gamesSearchLabel p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #DBE1EE;
+}

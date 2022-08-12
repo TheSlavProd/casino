@@ -1,0 +1,35 @@
+.checkboxWrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+}
+
+.checkbox {
+  width: 34.5px;
+  height: 31px;
+  /* width: 21px;
+  height: 21px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--authentication-modal-phone-input-background);
+  border-radius: 7px;
+  margin-right: 16px;
+}
+
+.checkboxWrapper p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #C4C4C4;
+}
+
+@media screen and (orientation: landscape) {
+  .checkbox {
+    width: 27px;
+  }
+}

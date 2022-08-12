@@ -1,0 +1,133 @@
+.betBanner {
+  background: #443D75;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 26px;
+  margin-bottom: 32px;
+}
+
+.bet p:first-of-type {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  background: linear-gradient(180deg, #FAFF0E -20.86%, #FF9900 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.bet p:last-of-type {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #F2F2F2;
+}
+
+.firstDeposit p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 25px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFDC01;
+  margin-bottom: 2px;
+}
+
+.firstDeposit p:last-of-type {
+  font-size: 27px;
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+.chooseNetwork {
+  margin-bottom: 20px;
+}
+
+.qrImage {
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.notice {
+  border: 1px solid #3C424D;
+  border-radius: 16px;
+  padding: 12px 36px;
+  margin-bottom: 32px;
+}
+
+.notice p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.depositButton {
+  cursor: pointer;
+  border: none;
+  height: 55px;
+  width: 100%;
+  background: linear-gradient(66.47deg, #007CEE 1.36%, #0CD3E0 92.25%);
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 30px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  border-radius: 16px;
+  margin-bottom: 44px;
+}
+
+.depositWith {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.depositWith p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 12px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #C4C4C4;
+  margin-right: 12px;
+}
+
+.depositIcon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #403A6C;
+  border-radius: 10px;
+}
+
+.depositIcon:first-of-type {
+  margin-right: 16px;
+}

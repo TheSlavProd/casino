@@ -1,0 +1,340 @@
+.transactionsHistory {
+  margin: 24px 24px 12px 24px;
+  padding: 24px 20px 24px 18px;
+  background: var(--transactions-history-background);
+  border-radius: 10px;
+}
+
+.historyStats {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: 5fr 1fr 5fr 1fr 5fr;
+  grid-template-rows: 1fr;
+  padding: 16px 0;
+  background: var(--transactions-history-history-stats-background);
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.historyStatsColumn p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.historyStatsColumn p:last-of-type {
+  margin-top: 16px;
+  font-size: 13px;
+  line-height: 12px;
+}
+
+.historyStatsDivider {
+  width: 1px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.transactionsTable {
+  margin-bottom: 30px;
+}
+
+.tableHeader {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 8px;
+}
+
+.tableHeader p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #AEAEB3;
+  text-align: center;
+}
+
+.tableHeader p:first-of-type {
+  text-align: left;
+}
+
+.tableHeader p:last-of-type {
+  text-align: right;
+}
+
+.transaction {
+  padding: 16px 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.timeAndType {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #AEAEB3;
+}
+
+.timeAndType:nth-child(2) {
+  text-align: center;
+}
+
+.state {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FF017B;
+  text-align: center;
+}
+
+.successState {
+  color: #01FF66;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amount img {
+  height: 15px;
+  width: 15px;
+  margin-right: 6px;
+}
+
+.amount p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 10px;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: #AEAEB3;
+}
+
+.transaction button {
+  margin-left: auto;
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #0AC6E2;
+}
+
+.pagination {
+  border-radius: 0px 0px 10px 10px;
+  position: relative;
+  top: 24px;
+  padding: 14px 0;
+  margin: 0 -20px 0 -18px;
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr;
+  background: var(--transactions-history-pagination-background);
+}
+
+.paginationControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 90px;
+}
+
+.pagination p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-right: 36px;
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+}
+
+.navButtons button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 9px 0px 0px 9px;
+  margin-right: 2px;
+}
+
+.navButtons button:last-of-type {
+  margin-right: 0;
+  border-radius: 0px 9px 9px 0px;
+}
+
+.navButtons button:last-of-type img {
+  transform: rotate(180deg);
+}
+
+.currentPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 60px;
+  background: #002733;
+  border-radius: 9px;
+  margin-right: 10px;
+}
+
+.currentPage p {
+  text-align: center;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.itemsToShow {
+  width: 61.24px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #002733;
+  border-radius: 9px;
+  margin-right: 40px;
+}
+
+.itemsToShow p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 15px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-right: 12px;
+}
+
+.currencySelect {
+  width: 118px;
+  margin-left: 18px;
+}
+
+.selectedOption {
+  padding: 8px 18px;
+}
+
+.selectedOption p {
+  margin-right: 12px;
+}
+
+.selectOptions {
+  top: 0px;
+  width: calc(118px - 36px);
+}
+
+.typesSelect {
+  width: 375px;
+  margin-bottom: 30px;
+}
+
+.typesSelectWrapper {
+  border-radius: 12px;
+}
+
+.typesSelectOptions {
+  width: calc(375px - 36px);
+}
+
+@media screen and (max-width: 769px) {
+  .transactionsHistory {
+    margin: 8px 8px;
+    padding: 18px 12px;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -12px;
+    top: 18px;
+  }
+
+  .paginationControls {
+    margin-right: 0;
+  }
+
+  .totalItems {
+    display: none;
+  }
+
+  .currencySelect {
+    margin-left: 0;
+  }
+
+  .currencySelect, .currentPage, .itemsToShow {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .transactionsTable {
+    width: 100%;
+    overflow-x: scroll;
+  }
+  
+  .transactionsTableWrapper {
+    width: 650px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .typesSelect {
+    width: 100%;
+  }
+
+  .typesSelectOptions {
+    width: calc(100% - 36px);
+  }
+}

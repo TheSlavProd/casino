@@ -1,0 +1,55 @@
+.authenticationButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button {
+  cursor: pointer;
+  height: 54px;
+  width: 130px;
+  border: 1px solid #3C424D;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  transition: .2s ease background-color, .2s linear width, .2s ease border-color;
+}
+
+.button:first-of-type {
+  margin-right: 24px;
+}
+
+.activeButton {
+  width: 230px;
+  border-color: transparent;
+  background: linear-gradient(66.47deg, #00C036 1.36%, #01EF8B 92.25%);
+}
+
+@media screen and (max-width: 550px) {
+  .button {
+    width: 130px;
+  }
+
+  .activeButton {
+    width: 183px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .authenticationButtons {
+    margin-top: 0;
+  }
+}

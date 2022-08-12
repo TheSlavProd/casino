@@ -1,0 +1,28 @@
+.tabs {
+  margin: 0 auto 36px auto;
+  width: fit-content;
+  padding: 6px;
+  background: var(--deposit-and-withdraw-tabs-background);
+  border-radius: 12px;
+}
+
+.tab {
+  height: 32px;
+  padding: 0 24px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.activeTab {
+  background: var(--deposit-and-withdraw-active-tab-background);
+}

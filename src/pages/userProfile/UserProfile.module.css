@@ -1,0 +1,17 @@
+.contacts {
+  margin: 24px 24px 12px 24px;
+}
+
+.bets {
+  margin: 30px 24px;
+}
+
+@media screen and (max-width: 769px) {
+  .contacts {
+    margin: 8px;
+  }
+
+  .bets {
+    margin: 30px 8px !important;
+  }
+}

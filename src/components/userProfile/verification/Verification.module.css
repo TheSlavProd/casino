@@ -1,0 +1,261 @@
+.verification {
+  margin: 24px 24px 12px 24px;
+  padding: 24px 20px 24px 18px;
+  background: var(--wallet-background);
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 22px;
+}
+
+.title p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.titleIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  background: #49387B;
+  border: 1px solid #1BEAFF;
+  border-radius: 10px;
+  margin-right: 12px;
+}
+
+.photoAndRules {
+  display: flex;
+  padding-bottom: 21px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  margin-bottom: 20px;
+}
+
+.photoUpload {
+  width: calc(454px - 50px);
+  padding: 19px 0 19px 50px;
+  height: calc(54px - 38px);
+  position: relative;
+  margin-bottom: 16px;
+  background: var(--verification-upload-photo-background);
+  border: 1px solid var(--verification-upload-photo-border-color);
+  border-radius: 16px;
+  margin-right: 40px;
+}
+
+.photoUpload img {
+  position: absolute;
+  top: 16px;
+  left: 18px;
+}
+
+.photoUpload p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #C4C4C4;
+}
+
+.photoUpload p br {
+  display: none;
+}
+
+.photoUpload button {
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: linear-gradient(360deg, #4EBFFF 33.37%, #00FFFF 189.62%);
+  border-radius: 10px;
+  width: 104px;
+  height: 32px;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.photoUpload input {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  z-index: 5;
+  top: 11px;
+  right: 15px;
+  width: 104px;
+  height: 32px;
+}
+
+.photoUpload input#file-upload-button {
+  height: 32px;
+}
+
+.uploadDescription {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 10px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.rules {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 32px;
+  padding: 14px 64px 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+}
+
+.rule {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.rule img {
+  margin-right: 6px;
+}
+
+.rule p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.cardNumber {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cardNumber button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 216px;
+  height: 52px;
+  background: linear-gradient(66.47deg, #00C036 7.88%, #01EF8B 124.01%);
+  border-radius: 16px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  transition: .2s ease opacity;
+}
+
+.cardNumber button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.cardNumberInput {
+  width: 454px;
+  margin-bottom: 0 !important;
+  margin-right: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .photoAndRules {
+    flex-direction: column;
+  }
+
+  .photo {
+    margin-bottom: 20px;
+  }
+
+  .rules {
+    width: calc(100% - 82px);
+    row-gap: 12px;
+    grid-template-columns: 2.3fr 3fr;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .verification {
+    margin: 8px 8px;
+    padding: 18px 12px;
+  }
+
+  .rules {
+    width: calc(100% - 48px);
+    padding: 18px 24px;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    row-gap: 12px;
+  }
+
+  .cardNumber {
+    flex-direction: column;
+  }
+
+  .cardNumberInput {
+    margin-right: 0;
+  }
+
+  .cardNumber button {
+    margin-top: 20px;
+    width: 454px;
+  }
+
+  .uploadDescription {
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .photoUpload {
+    width: calc(100% - 50px)
+  }
+
+  .cardNumberInput {
+    width: 100%;
+  }
+
+  .cardNumber button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .photoUpload {
+    padding: 12px 0 12px 50px;
+    height: calc(54px - 24px);
+  }
+
+  .photoUpload p br {
+    display: block;
+  }
+}

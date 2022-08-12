@@ -1,0 +1,50 @@
+.itemLink {
+  text-decoration: none;
+}
+
+.sideMenuItem {
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 12px 24px 8px;
+  padding-left: 16px;
+  border-radius: 12px;
+  background: transparent;
+  transition: .2s ease background;
+}
+
+.sideMenuItem:last-of-type {
+  margin-bottom: 18px;
+}
+
+.activeItemLink .sideMenuItem {
+  background: var(--side-menu-item-background);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.activeItemLink .sideMenuItem:hover {
+  background: var(--side-menu-item-background);
+}
+
+.activeItemLink .sideMenuItem .label {
+  color: var(--side-menu-item-active-color);
+}
+
+.icon {
+  width: 23px;
+  margin-right: 24px;
+}
+
+.label {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #AEAEB3;
+  white-space: nowrap;
+  transition: .2s ease color;
+}

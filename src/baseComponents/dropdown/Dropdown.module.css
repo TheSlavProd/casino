@@ -1,0 +1,104 @@
+.dropdown {
+  position: relative;
+  background: rgba(0, 14, 15, 0.5);
+  border-radius: 12px;
+}
+
+.dropdownOpened {
+  background: #02232C;
+}
+
+.currentValueAndCategory {
+  padding: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.currentValue, .placeholder {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.placeholder {
+  color: #7f7f7f;
+}
+
+.categoryAndToggle {
+  display: flex;
+  align-items: center;
+}
+
+.category {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--games-search-dropdown-category-color);
+  margin-right: 12px;
+}
+
+.toggleButton {
+  cursor: pointer;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.toggleButton img {
+  transition: .2s ease transform;
+}
+
+.openedToggleButton img {
+  transform: rotate(180deg);
+}
+
+.options {
+  z-index: 11;
+  top: 52px;
+  left: 0px;
+  position: absolute;
+  width: calc(100% - 32px);
+  background: transparent;
+  border-radius: 12px;
+  padding: 14px 16px 0 16px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.optionsOpened {
+  max-height: 500px;
+  background: #02232C;
+}
+
+.option {
+  cursor: pointer;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+  transition: .2s ease color;
+}
+
+.option:hover {
+  color: #cccccc;
+}
+
+.option:first-of-type {
+  padding-top: 8px;
+}

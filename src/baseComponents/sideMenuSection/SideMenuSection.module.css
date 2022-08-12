@@ -1,0 +1,52 @@
+.sideMenuSection {
+  margin-bottom: 18px;
+}
+
+.sideMenuItem {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 12px 16px 19px;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+.label {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 12px;
+  white-space: nowrap;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  margin-right: auto;
+}
+
+.toggleButton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.toggleButtonIcon {
+  transition: .2s ease transform;
+}
+
+.toggleButtonIconClosed {
+  transform: rotate(-90deg);
+}
+
+.subItems {
+  max-height: 1000px;
+  transition: max-height 0.2s ease;
+}
+
+.subItemsClosed {
+  overflow: hidden;
+  max-height: 0;
+}

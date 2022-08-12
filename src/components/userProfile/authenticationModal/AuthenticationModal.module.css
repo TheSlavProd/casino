@@ -1,0 +1,156 @@
+.modal {
+  width: 510px;
+}
+
+.authenticationModal {
+  padding: 50px 64px 0 64px;
+}
+
+.toggleButtons {
+  margin: 0 auto 20px auto;
+  width: fit-content;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--authentication-modal-tabs-background);
+  box-shadow: inset 0px 0px 4px #000000;
+  border-radius: 12px;
+}
+
+.toggleButton {
+  height: 32px;
+  width: 85px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 0;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
+  color: #DBE1EE;
+  transition: .2s ease background-color;
+}
+
+.toggleButton:first-of-type {
+  margin-right: 6px;
+}
+
+.activeToggleButton {
+  background: var(--authentication-modal-tab-active-background);
+}
+
+.loginWith {
+  margin-top: 55px;
+}
+
+.loginWithHeader {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.loginWithHeader p {
+  text-align: center;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #C4C4C4;  
+}
+
+.loginWithHeader p::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -64px;
+  top: 4.5px;
+  height: 1px;
+  width: 209px;
+  background: linear-gradient(90deg, #0873C0 0%, #660098 100%);
+}
+
+.loginWithHeader p::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -64px;
+  bottom: 4.5px;
+  height: 1px;
+  width: 209px;
+  background: linear-gradient(90deg, #0873C0 0%, #660098 100%);
+}
+
+.authProviders {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 36px;
+}
+
+.authProviders img {
+  margin-right: 32px;
+}
+
+.authProviders img:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 550px) {
+  .modal {
+    width: calc(100% - 16px);
+  }
+
+  .authenticationModal {
+    padding: 50px 16px 0 16px;
+  }
+
+  .loginWithHeader p::before, .loginWithHeader p::after {
+    width: 38%;
+  }
+
+  .loginWithHeader p::before {
+    left: -16px;
+  }
+
+  .loginWithHeader p::after {
+    right: -16px;
+  }
+}
+
+@media screen and (orientation: landscape) and (max-width: 950px) {
+  .modal {
+    width: calc(100% - 100px);
+  }
+
+  .authenticationModal {
+    padding: 20px 38px 0 38px;
+  }
+
+  .loginWith {
+    margin-top: 20px;
+  }
+
+  .loginWithHeader p::before, .loginWithHeader p::after {
+    width: 230px;
+  }
+
+  .loginWithHeader p::before {
+    left: -38px;
+  }
+
+  .loginWithHeader p::after {
+    right: -38px;
+  }
+
+  .authProviders {
+    margin-bottom: 20px;
+  }
+}

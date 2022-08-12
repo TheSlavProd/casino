@@ -1,0 +1,277 @@
+.userProfileNavigation {
+  margin: 24px 24px 12px 24px;
+  padding: 24px 20px 24px 18px;
+  background: var(--user-profile-navigation-background);
+  border-radius: 10px;
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+
+.avatarImage {
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.veryfiedAndUserName {
+  height: 37px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.veryfied {
+  display: flex;
+  align-items: center;
+  background: #0F5B60;
+  border-radius: 10px;
+  padding-right: 10px;
+}
+
+.veryfied img {
+  margin-right: 6px;
+}
+
+.veryfied p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #02EE7D;
+}
+
+.userName {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.navigation {
+  width: 65%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 12px;
+}
+
+.itemLink {
+  display: flex;
+  align-items: center;
+}
+
+.itemLink img {
+  margin-right: 12px;
+}
+
+.itemLink p {
+  white-space: nowrap;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.activeItemLink p {
+  color: #FFF423;
+}
+
+.depositNowButton {
+  cursor: pointer;
+  border: none;
+  height: 37px;
+  width: 114px;
+  padding: 0;
+  background: linear-gradient(90deg, #FAFF00 -24.7%, #FDD55A 100%);
+  border-radius: 10px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 11px;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #042F3A;
+  margin-right: 24px;
+}
+
+.activeTournamentsButton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  height: 37px;
+  width: 177px;
+  background: var(--user-profile-navigation-active-tournaments-background);
+  border-radius: 10px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 10px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFF423;
+  margin-right: 24px;
+}
+
+.activeTournamentsMobileButton {
+  display: none;
+}
+
+.logoutButton {
+  margin-right: auto;
+  cursor: pointer;
+  height: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #AEAEB3;
+}
+
+.logoutButton img {
+  margin-right: 6px;
+}
+
+.settingsAndMessages {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.settingsButton {
+  height: 32px;
+  width: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background: var(--user-profile-navigation-settings-button-background);
+  border-radius: 10px;
+}
+
+.settingsButton p {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.settingsButton:first-of-type {
+  margin-right: 12px;
+}
+
+.settingsButton:first-of-type img {
+  margin-right: 8px;
+}
+
+.settingsButton:last-of-type img {
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 1200px) {
+  .navigation {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .depositNowButton {
+    display: none;
+  }
+
+  .logoutButton {
+    margin-right: 12px;
+    margin-left: auto;
+  }
+
+  .logoutButton span {
+    display: none;
+  }
+
+  .settingsButton {
+    width: 32px;
+  }
+
+  .settingsButton p {
+    display: none;
+  }
+
+  .settingsButton img {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .userProfileNavigation {
+    margin: 8px 8px;
+    padding: 18px 12px;
+  }
+
+  .itemLink p {
+    font-size: 12px;
+  }
+
+  .profileInfo {
+    margin-bottom: 18px;
+  }
+
+  .activeTournamentsButton {
+    display: none;
+  }
+
+  .activeTournamentsMobileButton {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  .navigation {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content;
+    column-gap: 12px;
+  }
+}

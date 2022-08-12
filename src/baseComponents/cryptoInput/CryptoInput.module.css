@@ -1,0 +1,117 @@
+.cryptoInput {
+  position: relative;
+  width: 100%;
+}
+
+.labelArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.labelArea p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.cryptoInput input {
+  width: calc(100% - 185px);
+  padding: 9px 0 9px 185px;
+  background: var(--crypto-input-background);
+  border: none;
+  border-radius: 16px;
+  outline: none;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.cryptoInput input::-webkit-outer-spin-button,
+.cryptoInput input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.cryptoInput input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.currency {
+  position: absolute;
+  top: 37px;
+  left: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.currency p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin: 0 8px 0 12px;
+}
+
+.buttons {
+  position: absolute;
+  top: 27px;
+  right: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.buttons button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 44px;
+  padding: 0 14px;
+  background: var(--crypto-input-button-background);
+  margin-right: 0.5px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 9px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--crypto-input-button-color);
+}
+
+.buttons button:first-of-type {
+  border-radius: 12px 0px 0px 12px;
+}
+
+.buttons button:last-of-type {
+  border-radius: 0px 12px 12px 0px;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .buttons {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 0.5px;
+    margin-top: 12px;
+    position: static;
+  }
+}

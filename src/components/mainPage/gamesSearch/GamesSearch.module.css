@@ -1,0 +1,122 @@
+.gamesSearch {
+  margin: 0 28px;
+  background: var(--games-search-background);
+  border-radius: 12px;
+}
+
+.searchRow {
+  padding: 7.5px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  column-gap: 8px;
+}
+
+.dropdowns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 8px;
+}
+
+.searchContent {
+  max-height: 0px;
+  overflow: hidden;
+  transition: .2s linear max-height;
+}
+
+.searchContentOpen {
+  max-height: 700px;
+  overflow-y: scroll;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.searchContentOpen::-webkit-scrollbar-track {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: transparent;
+}
+.searchContentOpen::-webkit-scrollbar {
+  width: 0px !important;
+  background-color: transparent;
+}
+
+.searchContentOpen::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.labels {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 16px;
+  padding: 0px 8px;
+}
+
+.showAll {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: 20px;
+  background: var(--games-search-show-all-background);
+  border-radius: 0px 0px 16px 16px;
+}
+
+.showAll img {
+  margin-right: 6px;
+}
+
+.showAll button {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #DBE1EE;
+}
+
+.showAll button span {
+  color: #00FF47;
+  margin-left: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+  .searchRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchBar {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .gamesSearch {
+    margin: 0 8px;
+  }
+
+  .searchContentOpen {
+    max-height: 500px;
+  }
+
+  .dropdowns {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0;
+    row-gap: 8px;
+  }
+}

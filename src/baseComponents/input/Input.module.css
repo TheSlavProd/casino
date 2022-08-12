@@ -1,0 +1,99 @@
+.inputWrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.inputWrapper:last-of-type {
+  margin-bottom: 18px;
+}
+
+.input {
+  width: calc(100% - 16px);
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  padding: 18px 0 18px 16px;
+  border: none;
+  outline: none;
+  background: var(--input-background-color);
+  border-radius: 16px;
+}
+
+.input::placeholder {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #C4C4C4;
+}
+
+.labelArea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.labelArea p {
+  cursor: pointer;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 8px;
+  transition: .2s ease color;
+}
+
+.labelArea p:hover {
+  color: #FFFFFF;
+}
+
+.inputWrapper img {
+  cursor: pointer;
+  position: absolute;
+  top: 33px;
+  right: 15px;
+}
+
+.inputWrapper .copyIcon {
+  top: 37px;
+}
+
+.inputWrapper .copyIcon:active {
+  transform: translateY(1px);
+}
+
+.pasteIcon {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #0AC6E2;
+}
+
+@media screen and (max-width: 769px) {
+  .copyInput input {
+    width: calc(100% - 61px);
+    padding: 18px 45px 18px 16px;
+    text-overflow: ellipsis;
+  }
+}

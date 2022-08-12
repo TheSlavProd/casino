@@ -1,0 +1,145 @@
+.sideMenu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 195px;
+  z-index: 100;
+  height: 100vh;
+  background: var(--side-menu-background);
+  transition: .2s linear width;
+  overflow-y: scroll;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.sideMenu::-webkit-scrollbar-track {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  background-color: transparent;
+}
+.sideMenu::-webkit-scrollbar {
+  width: 0px !important;
+  background-color: transparent;
+}
+.sideMenu::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.closeIcon {
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin: 22px 0 22px 12px;
+  transition: .2s ease margin;
+}
+
+.logoIcon {
+  margin-right: 12px;
+}
+
+.logoText {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  background: var(--side-menu-logo-text-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.marginedDivider {
+  margin: 0 auto 22px auto !important;
+}
+
+.languageTitle {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 13px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #FFFFFF;
+  white-space: nowrap;
+  margin-bottom: 16px;
+}
+
+.liveChatButton {
+  margin: 0 auto 24px auto;
+  padding: 0;
+  width: 170.33px;
+  height: 34px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  background-color: #120F28;
+  transition: .2s ease background-color, .2s ease width;
+}
+
+.liveChatButton:hover {
+  background-color: #201b49;
+}
+
+.liveChatIconContainer {
+  height: 34px;
+  width: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #5E5CE6;
+}
+
+.liveChatText {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  color: #DBE1EE;
+  white-space: nowrap;
+  margin-left: 12px;
+}
+
+.socialMedia {
+  padding: 32px 44px 0 44px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 18px;
+  row-gap: 18px;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 1200px) {
+  .sideMenu {
+    transform: translateX(-195px);
+    transition: .2s ease transform;
+  }
+
+  .sideMenuIsOpen {
+    transform: translateX(0);
+  }
+
+  .closeIcon {
+    display: block;
+  }
+}

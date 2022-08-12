@@ -1,0 +1,229 @@
+.headerInfo {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 30px;
+  background: var(--mobile-header-first-background), var(--mobile-header-secondary-background), var(--mobile-header-third-background);
+}
+
+.mobileLogo {
+  display: flex;
+  align-items: center;
+}
+
+.mobileLogo img {
+  margin-right: 12px;
+}
+
+.mobileLogo h1 {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.mobileLogo h1 br {
+  display: none;
+}
+
+.currency {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.currency p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.percents {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 8px;
+}
+
+.percents p {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  color: #00FF85;
+  margin-right: 4px;
+}
+
+.cost {
+  margin-top: 8px;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 10px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.headerControls {
+  height: 65px;
+  padding: 6px 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--header-background);
+}
+
+.categoriesAndMenuButton {
+  display: flex;
+  align-items: center;
+}
+
+.menuButton {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  margin-right: 24px;
+  border-radius: 10px;
+  border: 1px solid #000000;
+  background: linear-gradient(360deg, #2A273E -65.11%, #4A4376 108.54%);
+}
+
+.menuButtonIcon {
+  transition: .2s ease transform;
+}
+
+.menuButtonIconActive {
+  transform: rotate(90deg);
+}
+
+.logo {
+  align-self: center;
+  justify-self: center;
+}
+
+.categories {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  background: #120F28;
+  box-shadow: inset 0px 0px 4px #000000;
+  border-radius: 12px;
+}
+
+.categoriesButton {
+  height: 32px;
+  width: 85px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: transparent;
+  transition: .2s ease background-color;
+}
+
+.categoriesButton:first-of-type {
+  margin-right: 8px;
+}
+
+.categoriesButton span {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.07em;
+  text-transform: capitalize;
+  color: #DBE1EE;
+  transition: .2s ease color;
+}
+
+.categoriesButton img {
+  margin-right: 8px;
+}
+
+.slotsButtonActive {
+  background-color: #518EFF;
+}
+
+.slotsButtonActive span {
+  color: #FAFF0E;
+}
+
+.liveButtonActive {
+  background: linear-gradient(180deg, #589953 3.95%, #1E4855 166.45%);
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 15;
+  }
+
+  .headerInfo {
+    display: flex;
+  }
+
+  .headerControls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .categoriesButton {
+    width: 37px;
+    padding: 0;
+  }
+
+  .categoriesButton img {
+    margin-right: 0;
+  }
+
+  .categoriesButton span {
+    display: none;
+  }
+
+  .mobileLogo h1 br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .headerInfo, .headerControls {
+    padding: 6px;
+  }
+
+  .menuButton {
+    margin-right: 8px;
+  }
+}

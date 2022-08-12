@@ -1,0 +1,70 @@
+.search {
+  width: 100%;
+}
+
+.searchBar {
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+
+.searchIcon {
+  height: 19px;
+  width: 19px;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.searchInput {
+  height: 100%;
+  width: calc(100% - 130px);
+  padding: 7px 70px 7px 44px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 12px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.searchInput::placeholder {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #AEAEB3;
+}
+
+.searchInput:focus {
+  border: none;
+}
+
+.searchButton {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 35px;
+  padding: 0 12px;
+  cursor: pointer;
+  border: none;
+  background: var(--games-search-button-background);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}

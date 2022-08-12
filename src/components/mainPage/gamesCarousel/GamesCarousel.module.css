@@ -1,0 +1,201 @@
+.gamesCarousel {
+  margin: 18px 28px 0 28px;
+  border-radius: 16px;
+  background-color: var(--games-carousel-secondary-background);
+  padding: 16px 18px 12px 18px;
+}
+
+.carousel {
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
+}
+
+.carouselHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.carouselInfo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.carouselIcon {
+  margin-right: 12px;
+}
+
+.carouselTitle {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 13px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.carouselControls {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.showAllButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  margin-right: 18px;
+}
+
+.showAllButton img {
+  width: 19px;
+  margin-right: 6px;
+}
+
+.showAllButton span {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.slideControls {
+  display: flex;
+  align-items: center;
+}
+
+.slideButton {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  height: 24px;
+  width: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.prevButton {
+  border-radius: 9px 0px 0px 9px;
+  margin-right: 2px;
+}
+
+.nextButton {
+  border-radius: 0 9px 9px 0;
+  margin-right: 2px;
+}
+
+.nextButton:last-of-type {
+  margin-right: 0;
+}
+
+.nextButton img {
+  transform: rotate(180deg);
+}
+
+.gameSlide {
+  display: flex;
+  flex-direction: column;
+}
+
+.gameImage {
+  height: 200.13px;
+  width: 288px;
+  position: relative;
+}
+
+.gameImage img {
+  width: 288px;
+  margin-bottom: 8px;
+}
+
+.gameTitle {
+  margin-top: 8px;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #DBE1EE;
+}
+
+.gameImage:hover .gameControls {
+  opacity: 1;
+}
+
+.gameControls {
+  border-radius: 12px;
+  z-index: 2;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: .2s ease opacity;
+}
+
+.addToFavourite {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.playButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+.playButtons button, .addToFavourite {
+  cursor: pointer;
+  width: 110px;
+  height: 35px;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: var(--entry-carousel-button-background);
+  border-radius: 7px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.playButtons button:first-of-type {
+  margin-bottom: 8px;
+}
+
+.addToFavourite {
+  font-size: 12px;
+  line-height: 16px;
+  width: 80px;
+  height: 25px;
+}
+
+@media screen and (max-width: 769px) {
+  .gamesCarousel {
+    margin: 15px 8px 0 8px;
+  }
+}

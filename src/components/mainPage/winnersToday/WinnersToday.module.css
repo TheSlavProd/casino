@@ -1,0 +1,162 @@
+.winnersToday {
+  margin: 20px 28px;
+  padding: 20px 20px 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: var(--winners-today-background), url('./assets/background.png');
+  background-repeat: no-repeat;
+  background-position: right, left;
+  border-radius: 13px;
+}
+
+.title {
+  text-align: left;
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: radial-gradient(151.64% 151.64% at 115.62% -72.33%, #FAFF0E 0%, #FF9900 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-right: 50px;
+}
+
+.winnersWrapper {
+  width: 100%;
+}
+
+.winners {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.winner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--winners-today-item-background);
+  border-radius: 7px;
+  padding: 18px;
+}
+
+.avatar {
+  margin-bottom: 24px;
+}
+
+.name {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.amountAndCurrency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amountAndCurrency img {
+  margin-right: 6px;
+}
+
+.amount {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #00FF47;
+}
+
+@media screen and (min-width: 1441px) {
+  .winnersToday {
+    background-image: var(--winners-today-background), url('./assets/background_2x.png');
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .title {
+    margin-right: 10px;
+  }
+
+  .winner {
+    padding: 18px 8px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .winnersToday {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12.5px 20px 12.5px 40px;
+    background-size: cover;
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 12px;
+    margin-right: 0;
+  }
+
+  .title br {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .winnersToday {
+    margin: 10px 8px 20px 8px;
+    padding: 10px 18px 0px 18px;
+    background-image: var(--winners-today-background), url('./assets/mobile-background.jpg');
+  }
+
+  .title {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 12px;
+    margin-right: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .winnersWrapper {
+    overflow-x: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
+    padding-bottom: -17px;
+  }
+
+  .winnersWrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    background-color: transparent;
+  }
+  .winnersWrapper::-webkit-scrollbar {
+    width: 3px !important;
+    background-color: transparent;
+  }
+  .winnersWrapper::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+  .winners {
+    width: 750px;
+  }
+}

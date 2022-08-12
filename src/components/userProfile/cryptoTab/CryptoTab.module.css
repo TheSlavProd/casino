@@ -1,0 +1,389 @@
+.dataAndCurrencies {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  grid-template-rows: 1fr;
+  column-gap: 80px;
+}
+
+.currencies {
+  background: var(--fiat-and-crypto-tab-table-background);
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+}
+
+.estimatedBalance {
+  border: 1px solid #476170;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 24px 0 24px 24px;
+}
+
+.estimatedBalance p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.estimatedBalance p br {
+  display: none;
+}
+
+.currencies h3 {
+  margin: 20px 0 12px 0;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.tableData {
+  padding: 0 100px 18px 24px;
+}
+
+.tableHead {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin-bottom: 6px;
+}
+
+.tableHead p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #AEAEB3;
+  text-align: center;
+}
+
+.tableHead p:first-of-type {
+  text-align: left;
+}
+
+.cryptoData {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.cryptoData p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.cryptoData p:first-of-type {
+  text-align: left;
+}
+
+.select {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.selectedOption {
+  height: 24px;
+}
+
+.selectWrapper {
+  background-color: var(--fiat-and-crypto-tab-select-background);
+}
+
+.selectOptions {
+  background-color: var(--fiat-and-crypto-tab-select-background);
+  top: 50px;
+  width: calc(100% - 36px);
+}
+
+.cryptoInput {
+  margin-bottom: 20px;
+}
+
+.addressInput {
+  margin-bottom: 0 !important;
+}
+
+.cashableBalance {
+  height: 44px;
+  padding: 0 18px 0 18px;
+  width: calc(100% - 36px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--fiat-and-crypto-tab-balance-background);
+  border-radius: 12px;
+  margin-bottom: 28px;
+}
+
+.cashableBalance p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.cashableBalance p:last-of-type {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 18px;
+  margin-left: 18px;
+}
+
+.submitArea {
+  margin-top: 30px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createWalletButton {
+  margin: 30px 0;
+}
+
+.submitArea button, .createWalletButton {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
+  width: 100%;
+  height: 54px;
+  background: var(--fiat-and-crypto-tab-button-background);
+  border-radius: 16px;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.depositWith {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.depositWith p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 9px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #C4C4C4;
+  margin-right: 12px;
+}
+
+.depositIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #0F5B60;
+  border-radius: 10px;
+}
+
+.depositIcon:first-of-type {
+  margin-right: 16px;
+}
+
+.noticeAndQR {
+  display: flex;
+}
+
+.notice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 16px 32px;
+  margin-right: 16px;
+}
+
+.notice p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.notice p .red {
+  color: #FF5959;
+}
+
+.notice p .blue {
+  color: #0AC6E2;
+}
+
+.bonus {
+  margin-top: 30px;
+  padding: 0 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--fiat-and-crypto-tab-banner-background);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 16px;
+}
+
+.deposit p:first-of-type {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 21px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FAFF0E;
+  margin-bottom: 8px;
+}
+
+.deposit p:last-of-type {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #F2F2F2;
+}
+
+.depositBonus p:first-of-type {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FAFF0E;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.depositBonus p:last-of-type {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #FAFF0E;
+  text-align: center;
+}
+
+@media screen and (min-width: 2000px) {
+  .dataAndCurrencies {
+    grid-template-columns: 1fr 1.3fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .dataAndCurrencies {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 80px;
+  }
+
+  .tableData {
+    padding: 0 24px 18px 24px;
+  }
+
+  .estimatedBalance p {
+    text-align: center;
+  }
+
+  .estimatedBalance p br {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .dataAndCurrencies {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .currencies {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .submitArea {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .submitArea button {
+    width: 100%;
+  }
+
+  .tableData {
+    padding: 0 8px 24px 8px;
+  }
+
+  .notice {
+    margin-right: 0;
+  }
+
+  .noticeAndQR {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .QR {
+    margin-top: 20px;
+  }
+
+  .cashableBalance {
+    padding: 16px 0 16px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: calc(100% - 16px);
+  }
+
+  .cashableBalance p:last-of-type {
+    margin-left: 0;
+  }
+}

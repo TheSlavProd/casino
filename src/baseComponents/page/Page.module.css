@@ -1,0 +1,16 @@
+.page {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.content {
+  min-height: 100vh;
+  width: calc(100% - 195px);
+  background-color: var(--page-content-background);
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 100%;
+  }
+}

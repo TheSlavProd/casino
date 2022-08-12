@@ -1,0 +1,223 @@
+.needCryptoBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 36px 8px 36px 44px;
+  background-position: right center, center, center;
+  background-size: cover, contain, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  border-radius: 16px;
+  margin: 18px 28px 0 28px;
+}
+
+.textAndButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 220px - 16px);
+}
+
+.needCryptoText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-right: 24px;
+}
+
+.buyWith {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-right: 36px;
+}
+
+.paymentSystems {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paymentSystems img {
+  margin-right: 40px;
+}
+
+.mobileButtonContainer {
+  display: none;
+}
+
+.buttonContainer, .mobileButtonContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.buttonContainer button, .mobileButtonContainer button {
+  cursor: pointer;
+  width: 220px;
+  height: 52px;
+  border: none;
+  outline: none;
+  padding: 0;
+  background: var(--entry-carousel-button-background);
+  border-radius: 10.1629px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+
+.shadow {
+  position: absolute;
+  width: 188px;
+  height: 47px;
+  left: 15px;
+  top: 15px;
+  background: var(--entry-carousel-button-background);
+  opacity: 0.4;
+  filter: blur(16.5341px);
+  border-radius: 9.14155px;
+}
+
+@media screen and (max-width: 1650px) {
+  .paymentSystems {
+    width: fit-content;
+  }
+
+  .needCryptoText, .buyWith {
+    font-size: 38px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: 1441px) {
+  .needCryptoBanner {
+    padding: 8px;
+  }
+
+  .paymentSystems img, .needCryptoText, .buyWith {
+    margin-right: 12.5px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .buttonContainer button {
+    width: 200px;
+  }
+
+  .visa {
+    width: 57px;
+  }
+
+  .mastercard {
+    width: 38px;
+  }
+
+  .gpay {
+    width: 56px;
+  }
+
+  .revolut {
+    width: 66px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .images {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .paymentSystems {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+
+  .needCryptoBanner {
+    margin: 8px;
+  }
+
+  .buttonContainer {
+    display: none;
+  }
+
+  .mobileButtonContainer {
+    display: block;
+    margin-left: auto;
+  }
+  
+  .mobileButtonContainer button {
+    width: 160px;
+  }
+
+  .mobileButtonContainer .shadow {
+    width: 130px;
+  }
+
+  .text {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .textAndButton {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .images, .paymentSystems {
+    width: 100%;
+  }
+
+  .visa {
+    width: 57px;
+  }
+
+  .mastercard {
+    width: 38px;
+  }
+
+  .gpay {
+    width: 56px;
+  }
+
+  .revolut {
+    width: 66px;
+  }
+
+  .paymentSystems img, .needCryptoText, .buyWith {
+    margin-right: 4px;
+  }
+
+  .needCryptoText {
+    font-size: 27px;
+    line-height: 27px;
+  }
+
+  .buyWith {
+    font-size: 27px;
+    line-height: 23px;
+  }
+}

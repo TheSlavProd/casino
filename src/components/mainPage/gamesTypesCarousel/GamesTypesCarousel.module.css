@@ -1,0 +1,62 @@
+.gamesTypesCarousel {
+  margin: 18px 62px 0 62px;
+}
+
+.gameTypeSlide {
+  height: 70px;
+  cursor: pointer;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--games-types-carousel-background);
+}
+
+.activeGameTypeSlide {
+  background: var(--games-types-carousel-active-background);
+}
+
+.gameTypeSlide p {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 12px;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  color: #DBE1EE;
+  margin-top: 8px;
+}
+
+.slideButton {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: -32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 70px;
+  padding: 0 12px;
+  background: var(--games-types-carousel-button-background);
+  border-radius: 12px 0 0 12px;
+}
+
+.prevSlideButton {
+  right: -32px;
+  left: unset;
+  border-radius: 0 12px 12px 0;
+}
+
+.prevSlideButton img {
+  transform: rotate(180deg);
+}
+
+@media screen and (max-width: 769px) {
+  .gamesTypesCarousel {
+    margin: 15px 40px 0 40px;
+  }
+}
